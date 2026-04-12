@@ -41,7 +41,7 @@ export default function Menu() {
           { name: "關於我", href: "/about" },
           { name: "設計與程式專案", href: "/design-project" },
           { name: "音樂與其餘一切", href: "/music-project" },
-          { name: "興趣與手作日常", href: "/hobby" }
+          { name: "興趣與手作日常", href: "/hobby-project" }
         ].map((item) => (
           <Link key={item.href} href={item.href}>
             <div className="group relative bg-white/70 backdrop-blur-sm border border-white/50 

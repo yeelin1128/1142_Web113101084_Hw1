@@ -18,7 +18,7 @@ export default function Home() {
         {/* 2. 主要內容區 */}
         <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10"></main>
         
-        <div className="sm:hidden w-full h-full">
+        <div className="sm:hidden w-full h-full justify-center">
           {/* 手機版 */}
           手機版本 Menu
           <Menu />
@@ -26,7 +26,7 @@ export default function Home() {
 
         {/* 電腦版看到的歡迎文字 */}
         <div className="hidden sm:flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-slate-800 mb-4 ">Lim Yi </h1>
+          <h1 className="text-4xl font-bold text-slate-800 mb-4 tracking-tight">Lim Yi </h1>
           <p className="text-slate-500 tracking-widest ">請從左側選單開始探索</p>
         </div>
 
