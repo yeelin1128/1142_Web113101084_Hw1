@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "林庭誼的數位履歷",
+  title: "林庭誼|數位履歷",
   description: "林庭誼的數位履歷",
 };
 

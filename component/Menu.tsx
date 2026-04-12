@@ -76,7 +76,7 @@ export default function Menu() {
           <FaInstagram className="text-gray-400 hover:text-pink-500 cursor-pointer transition-colors" size={20} />
         </Link>
 
-        <Link href="https://www.linkedin.com/in/ting-yi-lin/" target="_blank" rel="noopener noreferrer">
+        <Link href="https://www.linkedin.com/in/ting-yi-lin-081542366/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-gray-400 hover:text-blue-600 cursor-pointer transition-colors" size={20} />
         </Link>
         
