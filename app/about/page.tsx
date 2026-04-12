@@ -8,7 +8,7 @@ export default function About() {
   
   return (
     <>
-      <div className="flex h-screen w-screen overflow-hidden bg-slate-50">
+      <div className="flex h-screen w-screen overflow-hidden bg-slate-50 overflow-y-auto">
 
         <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur px-4 py-2 rounded-full shadow-sm border text-sm font-medium">  
          ← 返回

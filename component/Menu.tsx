@@ -8,7 +8,7 @@ export default function Menu() {
   
   return (
     <>
-      <div className="bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex-col overflow-hidden">
+      <div className="bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex-col overflow-hidden overflow-y-auto">
 
         <Link href="/">  
             HOME
