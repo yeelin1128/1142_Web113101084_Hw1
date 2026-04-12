@@ -19,7 +19,7 @@ export default function About() {
       </aside>
 
       {/* 2. 主內容區 */}
-      <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-12">
+      <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-12  pt-20 sm:pt-10">
         
         <header className="mb-12 ml-2">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">關於我</h1>
