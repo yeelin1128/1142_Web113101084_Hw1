@@ -15,6 +15,7 @@ export default function Home() {
         </div>
         <div className="sm:hidden">
           {/* 手機版 */}
+          手機版本 Menu
           <Menu />
         </div>
       </div>

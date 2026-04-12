@@ -7,11 +7,11 @@ export default function ProgrammingProject() {
 
   let projectData = {
     "1": {
-      "name":"寵物用品店",
+      "name":"文學與語言",
       "imageUrl": "/cat.png"
     },
     "2": {
-      "name":"樂器行官網",
+      "name":"數位內容",
       "imageUrl": "/ins.jpg"
     },
   };
