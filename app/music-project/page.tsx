@@ -11,7 +11,7 @@ export default function Hobby() {
     "3": { "name": "木、電吉他演奏", "imageUrl": "/guitarteac.jpg", "desc": "吉他教學" },
     "4": { "name": "25'淺動音樂創作營", "imageUrl": "/microwave.jpg", "desc": "〈生存最適姿勢〉作詞 | 最佳演出與詞曲" },
     "5": { "name": "高中畢業歌創作", "imageUrl": "/graduatesong.jpg", "desc": "〈孤島連線〉作詞、編曲" },
-    "6": { "name": "murmur", "imageUrl": "/coming-soon.jpg", "desc": "〈夏暮〉、〈浪〉、〈冬瓜檸檬〉、〈一個人的完成〉......待續" },
+    "6": { "name": "murmur", "imageUrl": "/coming-soon.png", "desc": "〈夏暮〉、〈浪〉、〈冬瓜檸檬〉、〈一個人的完成〉......待續" },
   };
   
   return (
