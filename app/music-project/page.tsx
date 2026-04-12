@@ -6,8 +6,12 @@ import Link from "next/link";
 export default function Hobby() {
   
   const projectData = {
-    "1": { "name": "中文之夜|音樂股", "imageUrl": "/cat.png", "desc": "探討文字的數位轉型" },
-    "2": { "name": "數位內容", "imageUrl": "/ins.jpg", "desc": "多媒體互動設計實作" },
+    "1": { "name": "中文之夜|音樂股", "/nccuchi.jpg": "/cat.png", "desc": "" },
+    "2": { "name": "政大爵樂表演", "/nccujazz.jpg": "/ins.jpg", "desc": "〈大雨〉〈Dumb Feeling〉等" },
+    "3": { "name": "吉他教學", "/guitarteac.jpg": "/ins.jpg", "desc": "" },
+    "4": { "name": "25'淺動音樂創作營", "/microwave.jpg": "/ins.jpg", "desc": "〈生存最適姿勢〉作詞" },
+    "5": { "name": "高中畢業歌創作", "/graduatesong.jpg": "/ins.jpg", "desc": "〈孤島連線〉作詞、編曲" },
+    "6": { "name": "murmur", "/coming-soon.jpg": "/ins.jpg", "desc": "〈夏暮〉、〈浪〉、〈冬瓜檸檬〉、〈一個人的完成〉......待續" },
   };
   
   return (
