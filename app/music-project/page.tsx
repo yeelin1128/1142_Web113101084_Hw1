@@ -143,12 +143,13 @@ export default function Hobby() {
               </div>
             </div>
 
-            {/* 其餘專案占位符：延續一致的圓角與背景 */}
+            {/* 其餘專案占位符：延續一致的圓角與背景 
             {[2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="bg-white/50 border border-dashed border-slate-300 rounded-[32px] h-40 flex justify-center items-center text-slate-400 font-medium hover:bg-white hover:border-slate-400 transition-colors cursor-help">
                 專案 {i} 籌備中...
               </div>
             ))}
+            */}
 
           </div>
         </main>
