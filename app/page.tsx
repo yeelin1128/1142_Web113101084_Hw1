@@ -29,12 +29,12 @@ export default function Home() {
         </aside>
 
         {/* 2. 主要內容區 */}
-        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10 z-10">
+        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-transparent p-10 z-10">
 
             {/* 電腦版看到的歡迎文字 */}
           <div className="hidden sm:flex flex-col items-center">
     {/*        <h1 className="text-4xl font-bold text-slate-800 mb-4 tracking-tight">Lim Yi </h1> */}
-            <p className="text-slate-500 tracking-widest ">請從左側選單開始探索1</p>
+            <p className="text-slate-500 tracking-widest ">請從左側選單開始探索</p>
           </div>
 
         </main>
