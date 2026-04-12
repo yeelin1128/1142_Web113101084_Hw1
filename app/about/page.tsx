@@ -3,6 +3,7 @@ import Image from "next/image"
 import Menu from "../../component/Menu"
 import Link from "next/link";
 
+
 export default function About() {
   
   return (
@@ -13,7 +14,7 @@ export default function About() {
          ← 返回
         </Link>
         
-        <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r bg-white z-10">
+        <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r  z-10">
           <Menu />
         </aside>
         
