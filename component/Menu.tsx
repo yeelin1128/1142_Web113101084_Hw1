@@ -8,7 +8,7 @@ export default function Menu() {
   
   return (
     <>
-      <div className="bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex-col overflow-hidden overflow-y-auto">
+      <div className="bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex-col overflow-hidden">
 
         <Link href="/">  
             HOME
@@ -68,7 +68,7 @@ export default function Menu() {
       </nav>
 
       {/* 4. 社群圖示 */}
-      <div className="flex justify-center gap-6 mt-auto pt-8 border-t border-gray-50">
+      <div className="flex justify-center gap-6 mt-12 pt-8 border-t border-white/20">
         <FaGithub className="text-gray-400 hover:text-black cursor-pointer transition-colors" size={20} />
         <FaInstagram className="text-gray-400 hover:text-pink-500 cursor-pointer transition-colors" size={20} />
         <FaLinkedin className="text-gray-400 hover:text-blue-600 cursor-pointer transition-colors" size={20} />
