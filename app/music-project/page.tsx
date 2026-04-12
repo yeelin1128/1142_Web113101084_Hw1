@@ -9,7 +9,7 @@ export default function Hobby() {
     "1": { "name": "中文之夜|音樂股", "imageUrl": "/nccuchi.jpg", "desc": "" },
     "2": { "name": "政大爵樂表演", "imageUrl": "/nccujazz.jpg", "desc": "〈大雨〉〈Dumb Feeling〉等" },
     "3": { "name": "吉他教學", "imageUrl": "/guitarteac.jpg", "desc": "" },
-    "4": { "name": "25'淺動音樂創作營", "imageUrl": "/microwave.jpg", "desc": "〈生存最適姿勢〉作詞" },
+    "4": { "name": "25'淺動音樂創作營", "imageUrl": "/microwave.jpg", "desc": "〈生存最適姿勢〉作詞|最佳演出與詞曲" },
     "5": { "name": "高中畢業歌創作", "imageUrl": "/graduatesong.jpg", "desc": "〈孤島連線〉作詞、編曲" },
     "6": { "name": "murmur", "imageUrl": "/coming-soon.jpg", "desc": "〈夏暮〉、〈浪〉、〈冬瓜檸檬〉、〈一個人的完成〉......待續" },
   };
@@ -57,17 +57,18 @@ export default function Hobby() {
               </div>
             </div>
 
-            {/* 卡片 2 (標準型) */}
-            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+            {/* 卡片 2 (跨兩行) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 row-span-2 aspect-[3/4] sm:aspect-auto">
               <div 
                 className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
               />
+              {/* 遮罩：滑鼠移入時變暗 */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              
               <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
-                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
-                  {projectData["2"]["name"]}
-                </h3>
+                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
+                  {projectData["2"]["name"]}</h3>
                 <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
                   {projectData["2"]["desc"]}
                 </p>
