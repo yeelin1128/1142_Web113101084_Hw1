@@ -30,9 +30,9 @@ export default function Menu() {
       <div className="text-center mb-10">
         <h2 className="text-xl font-bold tracking-[0.2em] text-gray-800 mb-2">林庭誼 Lim</h2>
         <p className="text-xs text-gray-600 tracking-widest uppercase">
-          文學 x 數位內容與科技 x 心理
-          一個正在路上彎彎繞繞的人類
-          </p>
+          文學 x 數位內容與科技 x 心理 </p>
+          <p className="text-xs text-gray-600 tracking-widest uppercase">
+          一個正在路上 彎彎繞繞的人類 </p>
       </div>
 
       {/* 3. 選項欄位（強化浮動與間距設計） */}
