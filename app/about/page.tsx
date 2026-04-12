@@ -7,7 +7,7 @@ export default function About() {
   
   return (
     <>
-      <div className="flex h-full">
+      <div className="flex min-h-screen bg-slate-50">
 
         <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
             返回
