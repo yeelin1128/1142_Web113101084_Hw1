@@ -156,3 +156,18 @@ body {
     background: rgba(255, 255, 255, 0.4);
   }
 }
+
+/*背景海浪效果*/
+@keyframes wave {
+  0% { transform: translate(-5%, 0); }
+  50% { transform: translate(5%, 2%); }
+  100% { transform: translate(-5%, 0); }
+}
+
+.animate-wave {
+  animation: wave 10s ease-in-out infinite;
+}
+
+.animate-wave-slow {
+  animation: wave 15s ease-in-out infinite;
+}
