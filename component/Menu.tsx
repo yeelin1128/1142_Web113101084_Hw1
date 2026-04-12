@@ -37,7 +37,7 @@ export default function Menu() {
       </div>
 
       {/* 3. 選項欄位（強化浮動與間距設計） */}
-      <nav className="flex flex-col gap-5 flex-grow px-2"> {/* 增加 gap 讓選項不擁擠 */}
+      <nav className="flex flex-col gap-5 flex-grow px-2 overflow-y-auto"> {/* 增加 gap 讓選項不擁擠 */}
         {[
           { name: "關於我", href: "/about" },
           { name: "設計與程式專案", href: "/design-project" },
