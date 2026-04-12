@@ -168,4 +168,21 @@ body {
   animation: wave 10s ease-in-out infinite !important;
   display: block !important;
 }
+/*海浪光影*/
+@keyframes glint {
+  0%, 100% { 
+    transform: translate(0, 0) scaleX(1); 
+    opacity: 0.3; 
+  }
+  50% { 
+    /* 讓光線橫向拉長，並變亮 */
+    transform: translate(15%, -5%) scaleX(1.3); 
+    opacity: 0.8; 
+  }
+}
+
+.animate-glint {
+  /* 光線閃爍的速度要比海浪快，才會有靈動感 */
+  animation: glint 4s ease-in-out infinite;
+}
 
