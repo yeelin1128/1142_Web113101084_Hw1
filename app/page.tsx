@@ -12,6 +12,7 @@ export default function Home() {
         <div className="sm:block hidden ">
           {/* 電腦版 */}
           電腦版本 Menu
+          <Menu />
         </div>
         <div className="sm:hidden">
           {/* 手機版 */}
