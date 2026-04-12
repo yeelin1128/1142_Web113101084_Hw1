@@ -39,9 +39,9 @@ export default function Menu() {
       <nav className="flex flex-col gap-5 flex-grow px-2"> {/* 增加 gap 讓選項不擁擠 */}
         {[
           { name: "關於我", href: "/about" },
-          { name: "專案作品", href: "/programming-project" },
-          { name: "音樂與生活", href: "/design-project" },
-          { name: "興趣日常", href: "/hobby" }
+          { name: "設計與程式專案", href: "/design-project" },
+          { name: "音樂與其餘一切", href: "/music-project" },
+          { name: "興趣與手作日常", href: "/hobby" }
         ].map((item) => (
           <Link key={item.href} href={item.href}>
             <div className="group relative bg-white/70 backdrop-blur-sm border border-white/50 
