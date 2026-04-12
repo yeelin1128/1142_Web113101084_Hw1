@@ -38,15 +38,15 @@ export default function Menu() {
         </Link>
 
         <Link href="/hobby">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">我的興趣</div>
+          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">程式與設計專案</div>
         </Link>
 
         <Link href="/design-project">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">社團活動</div>
+          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">音樂與其餘一切</div>
         </Link>
 
         <Link href="/programming-project">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">程式與設計專案</div>
+          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">興趣與生活日常</div>
         </Link>
 
 
