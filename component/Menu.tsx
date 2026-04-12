@@ -29,7 +29,7 @@ export default function Menu() {
       </div>
 
       <div className="text-center mb-10">
-        <h2 className="text-xl font-bold tracking-[0.2em] text-gray-800 mb-2">林庭誼 Lim</h2>
+        <h2 className="text-xl font-bold tracking-[0.2em] text-gray-800 mb-2 tracking-tight">林庭誼 Lim Yi</h2>
         <p className="text-xs text-gray-600 tracking-widest uppercase">
           文學 x 數位內容與科技 x 心理 </p>
           <p className="text-xs text-gray-600 tracking-widest uppercase">
