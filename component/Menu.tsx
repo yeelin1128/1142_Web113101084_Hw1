@@ -12,7 +12,7 @@ export default function Menu() {
                       bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex flex-col overflow-hidden">
 
         <Link href="/">  
-            HOME
+            首頁
         </Link>
 
         <div className="flex justify-center items-center mb-6">
@@ -31,7 +31,7 @@ export default function Menu() {
       <div className="text-center mb-10">
         <h2 className="text-xl font-bold tracking-[0.2em] text-gray-800 mb-2 tracking-tight">林庭誼 Lim Yi</h2>
         <p className="text-xs text-gray-600 tracking-widest uppercase">
-          文學 x 數位內容與科技 x 心理 </p>
+          文學 · 數位內容與科技 ‧ 心理 </p>
           <p className="text-xs text-gray-600 tracking-widest uppercase">
           一個正在路上 彎彎繞繞的人類 </p>
       </div>

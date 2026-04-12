@@ -23,7 +23,7 @@ export default function About() {
         
         <header className="mb-12 ml-2">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">關於我</h1>
-          <p className="text-slate-500 mt-3 tracking-[0.2em] uppercase text-sm">About // Liberal Arts / DCT / Psychology</p>
+          <p className="text-slate-500 mt-3 tracking-[0.2em] uppercase text-sm">About // Liberal Arts ‧ DCT ‧ Psychology</p>
         </header>
 
         {/* Bento Grid 容器 */}
