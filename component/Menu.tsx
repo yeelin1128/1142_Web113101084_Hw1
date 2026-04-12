@@ -71,8 +71,15 @@ export default function Menu() {
       {/* 4. 社群圖示 */}
       <div className="flex justify-center gap-6 mt-12 pt-8 border-t border-white/20">
         <FaGithub className="text-gray-400 hover:text-black cursor-pointer transition-colors" size={20} />
-        <FaInstagram className="text-gray-400 hover:text-pink-500 cursor-pointer transition-colors" size={20} />
-        <FaLinkedin className="text-gray-400 hover:text-blue-600 cursor-pointer transition-colors" size={20} />
+        
+        <Link href="https://www.instagram.com/koi_0stop1_/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-gray-400 hover:text-pink-500 cursor-pointer transition-colors" size={20} />
+        </Link>
+
+        <Link href="https://www.linkedin.com/in/ting-yi-lin/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="text-gray-400 hover:text-blue-600 cursor-pointer transition-colors" size={20} />
+        </Link>
+        
       </div>
     
         </div>
