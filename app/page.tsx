@@ -18,9 +18,8 @@ export default function Home() {
         {/* 2. 主要內容區 */}
         <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10"></main>
         
-        <div className="sm:hidden w-full h-full justify-center">
+        <div className="sm:hidden fixed inset-0 z-50 flex justify-center items-center bg-black/40 backdrop-blur-sm">
           {/* 手機版 */}
-          手機版本 Menu
           <Menu />
         </div>
 
