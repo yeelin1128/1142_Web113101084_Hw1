@@ -12,7 +12,7 @@ export default function Menu() {
                       bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex flex-col overflow-hidden">
 
         <Link href="/">  
-            首頁
+            HOME
         </Link>
 
         <div className="flex justify-center items-center mb-6">

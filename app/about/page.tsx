@@ -19,7 +19,7 @@ export default function About() {
       </aside>
 
       {/* 2. 主內容區 */}
-      <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-12  pt-20 sm:pt-10">
+      <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-12 pt-20 sm:pt-10">
         
         <header className="mb-12 ml-2">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">關於我</h1>
@@ -63,7 +63,7 @@ export default function About() {
 
           {/* C. 技能與標籤 (1x1) */}
           <div className="bg-white rounded-[32px] p-6 shadow-sm border border-slate-100 flex flex-wrap gap-2 items-center hover:bg-slate-50 transition-colors">
-            {["Ai & AE", "UIUX Design", "Max/MSP", "Cakewalk(DAW)"].map(tag => (
+            {["Ai & AE", "UIUX Design", "Max/MSP", "Cakewalk (DAW)"].map(tag => (
               <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold">
                 {tag}
               </span>
