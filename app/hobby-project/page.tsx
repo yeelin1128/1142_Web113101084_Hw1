@@ -5,78 +5,86 @@ import Link from "next/link";
 
 export default function ProgrammingProject() {
 
-  let projectData = {
-    "1": {
-      "name":"文學與語言",
-      "imageUrl": "/cat.png"
-    },
-    "2": {
-      "name":"數位內容",
-      "imageUrl": "/ins.jpg"
-    },
-  };
-
+  const projectData = {
+    "1": { "name": "烘焙、飲料調製", "imageUrl": "/design.png", "desc": "(因疫情)從廚師夢想鬼轉" },
+    "2": { "name": "手工小物", "imageUrl": "/card.gif", "desc": "裁縫設計、刺繡" },
+      };
+  
   return (
     <>
-      <div className="flex h-full">
-        <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
-            返回
+      <div className="flex h-screen w-screen overflow-hidden bg-slate-50 overflow-y-auto">
+
+        <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur-md 
+                                  px-4 py-2 rounded-full shadow-sm border text-xs font-medium active:scale-95 transition-all">  
+         ← 返回
         </Link>
-        <div className="sm:block hidden">
+        
+        <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r  z-10">
           <Menu />
-        </div>
-        <div className="bg-red-500 w-full">
-          <div className="bg-white h-full w-full p-3">
-            <div className="text-[32px] font-bold">程式專案</div>
-            <div className="text-[16px] text-gray-600 ">這裡收錄我的程式學習過程</div>
+        </aside>
+        
+
+        {/* 主內容區*/}
+        <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-10 pt-20 sm:pt-10">
+          
+          <header className="mb-10 ml-4">
+            <h1 className="text-3xl font-bold text-slate-800 tracking-tight">興趣與手作日常</h1>
+            <p className="text-slate-500 mt-2 tracking-widest">這裡記錄我的興趣與日常消遣</p>
+          </header>
+
+          {/* 專案網格 */}
+          <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 px-4">
             
-            <div className="grid sm:grid-cols-3 grid-cols-2 gap-4 m-[26px]">
-              
-              <div
-                className={`bg-amber-50 rounded-2xl h-full flex justify-center items-center 
-                row-span-2 bg-center bg-cover relative overflow-hidden`}
+            {/* 卡片 1 (跨兩行) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-[3/4] sm:aspect-auto">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${projectData["1"]["imageUrl"]})` }}
-              >
-                
-                <div className="text-white bg-black/15 w-full h-[80px] flex 
-                                  justify-center items-center backdrop-blur-sm
-                                  absolute bottom-0                  
-                ">
-                  { projectData["1"]["name"] }
-                </div>
-
-                {/* <div className="text-red-500 text-4xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">中心點</div> */}
-              </div>
-
-
-
-              <div className={`bg-amber-50 rounded-2xl h-full flex justify-center items-center 
-                bg-center bg-cover relative overflow-hidden`}
-                
-                style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
+              />
+              {/* 遮罩：滑鼠移入時變暗 */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
               
-              >
-
-                <div className="text-white bg-black/15 w-full h-[80px] flex 
-                                  justify-center items-center backdrop-blur-sm
-                                  absolute bottom-0"
-                >
-                  { projectData["2"]["name"] }
-                </div>
-                
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
+                  {projectData["1"]["name"]}</h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["1"]["desc"]}
+                </p>
               </div>
-              
-              <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案2</div>
-              <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案3</div>
-              <div className="bg-amber-50 rounded-2xl h-full flex justify-center items-center row-span-2">專案4</div>
-              <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案5</div>
-              <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案6</div>
-              <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案7</div>
             </div>
-          </div>
-        </div>
-      </div>
 
+            {/* 卡片 2 (標準) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["2"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["2"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+            
+
+            {/* 其餘專案占位符：延續一致的圓角與背景 
+            {[2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="bg-white/50 border border-dashed border-slate-300 rounded-[32px] h-40 flex justify-center items-center text-slate-400 font-medium hover:bg-white hover:border-slate-400 transition-colors cursor-help">
+                專案 {i} 籌備中...
+              </div>
+            ))}
+            */}
+
+          </div>
+        </main>
+
+      </div>
     </>
   );
+
 }

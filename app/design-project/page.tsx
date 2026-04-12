@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link";
 
 export default function Hobby() {
+
   const projectData = {
     "1": { "name": "設計應用", "imageUrl": "/design.png", "desc": "Adobe Illustrator, After Effect, Figma, Framer, Max/MSP" },
     "2": { "name": "程式專案", "imageUrl": "/card.gif", "desc": "Python: 名片生成器" },
@@ -28,8 +29,8 @@ export default function Hobby() {
         <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-10 pt-20 sm:pt-10">
           
           <header className="mb-10 ml-4">
-            <h1 className="text-3xl font-bold text-slate-800 tracking-tight">音樂與其餘一切</h1>
-            <p className="text-slate-500 mt-2 tracking-widest">這裡收錄我與音樂相關的經歷</p>
+            <h1 className="text-3xl font-bold text-slate-800 tracking-tight">設計與程式專案</h1>
+            <p className="text-slate-500 mt-2 tracking-widest">這裡收錄我的設計與程式相關經歷</p>
           </header>
 
           {/* 專案網格 */}
@@ -106,4 +107,5 @@ export default function Hobby() {
       </div>
     </>
   );
+
 }
