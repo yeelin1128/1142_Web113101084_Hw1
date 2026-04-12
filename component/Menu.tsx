@@ -21,7 +21,7 @@ export default function Menu() {
           
           <div className="relative bg-white p-1 rounded-full shadow-xl">
             <div className="bg-gray-100 w-24 h-24 rounded-full overflow-hidden flex justify-center items-center border-2 border-gray-50">
-              <Image src="/head-sticker.png" alt="Head sticker" width={96} height={96} className="object-cover" />
+              <Image src="/head-sticker.webp" alt="Head sticker" width={96} height={96} className="object-cover" />
             </div>
           </div>
         </div>
