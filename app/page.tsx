@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <>
-      <div className="flex h-screen w-full overflow-hidden bg-slate-50 overflow-y-auto z-0">
+      <div className="flex h-screen w-full overflow-hidden bg-slate-50 overflow-y-auto">
         
         {/* --- 海浪背景層 --- */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">

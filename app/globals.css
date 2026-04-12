@@ -158,14 +158,14 @@ body {
 }
 
 /*背景海浪效果*/
-@keyframes wave {
-  0% { transform: translate(-5%, 0); }
-  50% { transform: translate(5%, 2%); }
-  100% { transform: translate(-5%, 0); }
+@keyframes wave-flow {
+  0% { transform: translate(0, 1) rotate(0deg) scale(1); }
+  50% { transform: translate(-25%, 1.1) rotate(2deg) scale(1.05); }
+  100% { transform: translate(0, 1) rotate(-1deg) scale(0.98); }
 }
 
 .animate-wave {
-  animation: wave 10s ease-in-out infinite;
+  animation: wave 8s ease-in-out infinite;
 }
 
 .animate-wave-slow {
