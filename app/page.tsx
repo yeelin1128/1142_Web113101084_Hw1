@@ -32,7 +32,7 @@ export default function Home() {
         <main className="flex-grow h-screen flex flex-col justify-center items-center bg-transparent p-10 z-10">
 
             {/* 電腦版看到的歡迎文字 */}
-          <div className="hidden sm:flex flex-col items-center p-10 rounded-[40px] bg-white/10 backdrop-blur-sm border border-white/20">
+          <div className="hidden sm:flex flex-col items-center">
     {/*        <h1 className="text-4xl font-bold text-slate-800 mb-4 tracking-tight">Lim Yi </h1> */}
             <p className="text-slate-500 tracking-widest drop-shadow-sm">
               請從左側選單開始探索
