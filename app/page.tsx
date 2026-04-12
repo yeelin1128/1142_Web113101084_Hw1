@@ -24,10 +24,10 @@ export default function Home() {
           
           {/* 波光光線層：用白色 (white) 搭配極高的模糊度，營造出陽光感 */}
           <div className="absolute bottom-20 left-10 w-[80%] h-[40px] 
-                          bg-white/40 rounded-full blur-xl animate-glint" />
+                          bg-white/50 rounded-full blur-xl animate-glint" />
           
           <div className="absolute bottom-40 right-20 w-[60%] h-[30px] 
-                          bg-yellow-100/30 rounded-full blur-2xl animate-glint" 
+                          bg-yellow-100/50 rounded-full blur-2xl animate-glint" 
               style={{ animationDuration: '3s', animationDelay: '-1s' }} />
         </div>
 
