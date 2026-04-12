@@ -9,8 +9,8 @@ export default function About() {
     <>
       <div className="flex min-h-screen bg-slate-50">
 
-        <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
-            返回
+        <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur px-4 py-2 rounded-full shadow-sm border text-sm font-medium">  
+         ← 返回
         </Link>
         <div className="sm:block hidden">
           <Menu />
