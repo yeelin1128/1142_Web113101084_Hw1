@@ -16,17 +16,19 @@ export default function Home() {
         </aside>
 
         {/* 2. 主要內容區 */}
-        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10"></main>
+        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10">
+
+            {/* 電腦版看到的歡迎文字 */}
+          <div className="hidden sm:flex flex-col items-center">
+            <h1 className="text-4xl font-bold text-slate-800 mb-4 tracking-tight">Lim Yi </h1>
+            <p className="text-slate-500 tracking-widest ">請從左側選單開始探索</p>
+          </div>
+          
+        </main>
         
         <div className="sm:hidden fixed inset-0 z-50 flex justify-center items-center bg-black/40 backdrop-blur-sm">
           {/* 手機版 */}
           <Menu />
-        </div>
-
-        {/* 電腦版看到的歡迎文字 */}
-        <div className="hidden sm:flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-slate-800 mb-4 tracking-tight">Lim Yi </h1>
-          <p className="text-slate-500 tracking-widest ">請從左側選單開始探索</p>
         </div>
 
       </div>
