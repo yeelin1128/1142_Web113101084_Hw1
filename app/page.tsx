@@ -19,7 +19,7 @@ export default function Home() {
   
           {/* 第二層：淡淡的靛色 (放在左下角) */}
           <div className="absolute -bottom-32 -right-20 w-[150%] h-[600px] 
-                          bg-indigo-300/20 rounded-[100%] blur-3xl animate-wave" 
+                          bg-[#3deafe]-300/20 rounded-[100%] blur-3xl animate-wave" 
                 style={{ animationDuration: '12s', animationDelay: '-2s' }} />
           
           {/* 波光光線層：用白色 (white) 搭配極高的模糊度，營造出陽光感 */}
