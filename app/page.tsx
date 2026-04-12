@@ -12,11 +12,15 @@ export default function Home() {
         
         {/* --- 海浪背景層 --- */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 opacity-30">
-          {/* 第一層波浪 (淺藍色) */}
-          <div className="absolute -bottom-10 -left-10 w-[120%] h-[300px] bg-gradient-to-t from-blue-200/50 to-transparent rounded-[40%_50%_0_0] blur-3xl animate-wave" />
-          
-          {/* 第二層波浪 (更淡的靛藍) */}
-          <div className="absolute -bottom-20 -right-10 w-[130%] h-[400px] bg-gradient-to-t from-indigo-100/40 to-transparent rounded-[50%_40%_0_0] blur-3xl animate-wave-slow" />
+          {/* 第一層：深一點的藍 (放在右下角) */}
+          <div className="absolute -bottom-20 -left-20 w-[140%] h-[500px] 
+                          bg-blue-400/20 rounded-[100%] blur-2xl animate-wave" 
+                  style={{ animationDelay: '0s' }} />
+  
+          {/* 第二層：淡淡的靛色 (放在左下角) */}
+          <div className="absolute -bottom-32 -right-20 w-[150%] h-[600px] 
+                          bg-indigo-300/20 rounded-[100%] blur-3xl animate-wave" 
+                style={{ animationDuration: '12s', animationDelay: '-2s' }} />
         </div>
 
         {/* 1. 電腦版選單：只有在 sm (640px) 以上才會顯示 */}
