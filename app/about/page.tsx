@@ -7,7 +7,12 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-slate-50">
-      
+
+      <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur-md 
+                                  px-4 py-2 rounded-full shadow-sm border text-xs font-medium active:scale-95 transition-all">  
+         ← 返回
+      </Link>
+
       {/* 1. 電腦版選單 */}
       <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r z-10">
         <Menu />
