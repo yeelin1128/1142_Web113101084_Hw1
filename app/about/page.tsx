@@ -30,7 +30,7 @@ export default function About() {
               <span className="text-indigo-500 font-bold tracking-widest text-xs uppercase">Introduction</span>
               <h2 className="text-2xl font-bold text-slate-800 mt-4 mb-6">林庭誼 Lim Yi</h2>
               <p className="text-slate-600 leading-relaxed mb-4">
-                一個喜歡下廚和音樂，現實在盆地與港都、思想在文學與數位之間遊走的人。背景橫跨「文學」、「數位科技」與「心理」，喜歡從不同的角度去觀察世界。
+                一個離不開下廚和音樂，現實在盆地與港都、思想在文學與數位之間遊走的人。背景橫跨「文學」、「數位科技」與「心理」，喜歡從不同的角度去觀察世界。
               </p>
               <p className="text-slate-600 leading-relaxed">
                 程式碼也許就是現代的筆墨，而人之所以為人是因為透過閱讀與書寫了解存有的狀態。

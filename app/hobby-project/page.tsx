@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function ProgrammingProject() {
 
   const projectData = {
-    "1": { "name": "烘焙、飲料調製", "imageUrl": "/design.png", "desc": "(因疫情)從廚師夢想鬼轉" },
-    "2": { "name": "手工小物", "imageUrl": "/card.gif", "desc": "裁縫設計、刺繡" },
+    "1": { "name": "烘焙、飲料調製", "imageUrl": "", "desc": "(因疫情)從廚師夢想鬼轉" },
+    "2": { "name": "手工小物", "imageUrl": "", "desc": "裁縫設計、刺繡" },
       };
   
   return (
@@ -72,13 +72,13 @@ export default function ProgrammingProject() {
 
             
 
-            {/* 其餘專案占位符：延續一致的圓角與背景 */}
+            {/* 其餘專案占位符：延續一致的圓角與背景
             {[2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="bg-white/50 border border-dashed border-slate-300 rounded-[32px] h-40 flex justify-center items-center text-slate-400 font-medium hover:bg-white hover:border-slate-400 transition-colors cursor-help">
                 專案 {i} 籌備中...
               </div>
             ))}
-            
+             */}
 
           </div>
         </main>
