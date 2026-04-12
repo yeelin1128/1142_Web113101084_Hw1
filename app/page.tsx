@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <>
-      <div className="flex h-screen w-full overflow-hidden bg-slate-50 overflow-y-auto">
+      <div className="flex h-screen w-full overflow-hidden bg-slate-50 overflow-y-auto z-0">
         
         {/* --- 海浪背景層 --- */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 opacity-30">
@@ -25,7 +25,7 @@ export default function Home() {
         </aside>
 
         {/* 2. 主要內容區 */}
-        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10">
+        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10 z-10">
 
             {/* 電腦版看到的歡迎文字 */}
           <div className="hidden sm:flex flex-col items-center">
