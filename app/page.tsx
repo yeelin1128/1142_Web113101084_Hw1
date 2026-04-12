@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
           {/* 第一層：深一點的藍 (放在右下角) */}
           <div className="absolute -bottom-20 -left-20 w-[140%] h-[500px] 
-                          bg-blue-400/20 rounded-[100%] blur-2xl animate-wave" 
+                          bg-blue-400/20 rounded-[50%_40%_0_0] blur-3xl animate-wave" 
                   style={{ animationDelay: '0s' }} />
   
           {/* 第二層：淡淡的靛色 (放在左下角) */}
