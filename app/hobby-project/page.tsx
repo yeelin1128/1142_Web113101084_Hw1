@@ -47,7 +47,7 @@ export default function ProgrammingProject() {
               
               <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30
                               transition-transform duration-500 ease-in-out
-                  translate-y-[calc(100%-80px)] group-hover:translate-y-0">
+                              translate-y-[calc(100%-80px)] group-hover:translate-y-0">
                 <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
                   {projectData["1"]["name"]}</h3>
                 <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
@@ -63,7 +63,9 @@ export default function ProgrammingProject() {
                 style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30
+                              transition-transform duration-500 ease-in-out
+                              translate-y-[calc(100%-70px)] group-hover:translate-y-0">
                 <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
                   {projectData["2"]["name"]}
                 </h3>
