@@ -25,7 +25,7 @@ export default function About() {
         </aside>
         
 
-        {/* 主內容區：移除背景紅，改為優雅的淡色 */}
+        {/* 主內容區*/}
         <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-10 pt-20 sm:pt-10">
           
           <header className="mb-10 ml-4">
@@ -45,9 +45,10 @@ export default function About() {
               {/* 遮罩：滑鼠移入時變暗 */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
               
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-black/20 border-t border-white/20">
-                <h3 className="text-xl font-bold mb-1 tracking-wider">{projectData["1"]["name"]}</h3>
-                <p className="text-xs opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/20">
+                <h3 className="text-xl font-bold mb-1 tracking-wider text-slate-800">
+                  {projectData["1"]["name"]}</h3>
+                <p className="text-xs text-slate-600 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
                   {projectData["1"]["desc"]}
                 </p>
               </div>
@@ -60,8 +61,8 @@ export default function About() {
                 style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-black/20 border-t border-white/20">
-                <h3 className="text-lg font-bold tracking-wider">{projectData["2"]["name"]}</h3>
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/20">
+                <h3 className="text-lg font-bold tracking-wider text-slate-800">{projectData["2"]["name"]}</h3>
               </div>
             </div>
 
