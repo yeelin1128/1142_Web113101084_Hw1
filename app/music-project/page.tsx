@@ -58,7 +58,7 @@ export default function Hobby() {
             </div>
 
             {/* 卡片 2 (標準型) */}
-            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video row-span-2 col-span-2">
               <div 
                 className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
@@ -108,7 +108,7 @@ export default function Hobby() {
                 </p>
               </div>
             </div>
-            
+
             {/* 卡片 5 (跨兩行) */}
             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 row-span-2 aspect-[3/4] sm:aspect-auto">
               <div 
