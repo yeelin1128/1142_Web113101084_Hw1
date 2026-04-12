@@ -41,11 +41,12 @@ export default function About() {
 
           {/* B. 專業領域 (1x2) */}
           <div className="sm:col-span-1 sm:row-span-2 bg-indigo-50 rounded-[32px] p-8 flex flex-col border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
-            <h3 className="text-lg font-bold text-indigo-900 mb-6">研究領域</h3>
+            <h3 className="text-lg font-bold text-indigo-900 mb-6">探索領域</h3>
             <ul className="space-y-6">
               {[
                 { title: "文學敘事", icon: "📖" },
                 { title: "數位內容", icon: "💻" },
+                { title: "音樂創作", icon: "🎶" },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-4 group">
                   <span className="bg-white p-2 rounded-xl shadow-sm group-hover:scale-110 transition-transform">{item.icon}</span>
