@@ -2,12 +2,13 @@
 import Image from "next/image"
 import Link from "next/link";
 import { TbActivity } from "react-icons/tb";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Menu() {
   
   return (
     <>
-      <div className="bg-white w-[320px] h-full p-4">
+      <div className="bg-white w-[320px] h-full p-4 shadow-lg">
 
         <Link href="/">  
             HOME
@@ -15,7 +16,7 @@ export default function Menu() {
 
         <div className="flex justify-center items-center w-full">
           <div className="bg-gray-200 w-[80px] h-[80px] rounded-full overflow-hidden flex justify-center items-center">
-            <Image src="/cat.png" alt="cat" width={80} height={80} />
+            <Image src="/cat.png" alt="Head sticker" width={80} height={80} />
           </div>
         </div>
 
