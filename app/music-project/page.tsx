@@ -66,7 +66,80 @@ export default function Hobby() {
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
               <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
                 <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
-                  {projectData["2"]["name"]}</h3>
+                  {projectData["2"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["2"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+             {/* 卡片 3 (標準型) */}
+             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["3"]["imageUrl"]})` }}
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["3"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["3"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+            {/* 卡片 4 (標準型) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["4"]["imageUrl"]})` }}
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["4"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["4"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+            {/* 卡片 5 (跨兩行) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 row-span-2 aspect-[3/4] sm:aspect-auto">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["5"]["imageUrl"]})` }}
+              />
+              {/* 遮罩：滑鼠移入時變暗 */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
+                  {projectData["5"]["name"]}</h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["5"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+            {/* 卡片 6 (標準型) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["6"]["imageUrl"]})` }}
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["6"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["6"]["desc"]}
+                </p>
               </div>
             </div>
 
