@@ -158,11 +158,14 @@ body {
 }
 
 /*背景海浪效果*/
-@keyframes flash {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.1; }
+@keyframes wave-flow {
+  0% { transform: translate(0, 1) rotate(0deg) scale(1); }
+  50% { transform: translate(8%, 12%) rotate(--chart-5) scale(1.05); }
+  100% { transform: translate(-5%, 8%) rotate(-3deg) scale(0.98); }
 }
+
 .animate-wave {
-  animation: flash 1s infinite !important;
+  animation: wave 10s ease-in-out infinite !important;
+  display: block !important;
 }
 
