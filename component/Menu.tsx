@@ -9,7 +9,7 @@ export default function Menu() {
   return (
     <>
       <div className="inset-y-0 left-0 
-                      bg-[#acbac4] w-full h-screen p-4 shadow-lg flex flex-col overflow-hidden">
+                      bg-[#acbac4] w-[320px] h-screen p-4 shadow-lg flex flex-col overflow-hidden">
 
         <Link href="/">  
             HOME
