@@ -38,7 +38,7 @@ export default function RootLayout({
           
 
           {/* 右邊 */}
-          <div className="bg-[#f0f0db] w-full h-full">
+          <div className="bg-[#e1d9bc] w-full h-full">
 
             {children}
 
