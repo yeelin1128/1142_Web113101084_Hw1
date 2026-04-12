@@ -75,7 +75,7 @@ export default function About() {
                <h3 className="text-xl font-bold">目前狀態</h3>
                <p className="opacity-90 mt-2">正在探索更多互動科技與敘事、音樂結合的可能性。</p>
              </div>
-             <div className="text-5xl opacity-20 group-hover:scale-120 transition-transform duration-700">🌊</div>
+             <div className="text-5xl opacity-30 group-hover:scale-300 transition-transform duration-700">🌊</div>
           </div>
 
         </div>
