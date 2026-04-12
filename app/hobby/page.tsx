@@ -9,7 +9,7 @@ export default function Hobby() {
     <>
       <div className="flex h-full">
         <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
-            返回
+        ← 返回
         </Link>
         <div className="sm:block hidden">
           <Menu />
