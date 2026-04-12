@@ -29,6 +29,10 @@ export default function Home() {
           <div className="absolute bottom-40 right-20 w-[60%] h-[30px] 
                           bg-yellow-100/50 rounded-full blur-2xl animate-glint" 
               style={{ animationDuration: '3s', animationDelay: '-1s' }} />
+          
+          <div className="absolute bottom-50 left-10 w-[80%] h-[20px] 
+                          bg-white/40 rounded-full blur-xl animate-glint" />
+
           <div className="absolute bottom-60 right-20 w-[60%] h-[30px] 
                           bg-yellow-150/50 rounded-full blur-2xl animate-glint" 
               style={{ animationDuration: '3s', animationDelay: '-1s' }} />
