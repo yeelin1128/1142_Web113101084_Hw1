@@ -18,7 +18,7 @@ export default function About() {
         
         <header className="mb-12 ml-2">
           <h1 className="text-4xl font-bold text-slate-800 tracking-tight">關於我</h1>
-          <p className="text-slate-500 mt-3 tracking-[0.2em] uppercase text-sm">About / Philosophy / Journey</p>
+          <p className="text-slate-500 mt-3 tracking-[0.2em] uppercase text-sm">About // Liberal Arts / DCT / Psychology</p>
         </header>
 
         {/* Bento Grid 容器 */}
@@ -28,12 +28,12 @@ export default function About() {
           <div className="sm:col-span-2 sm:row-span-2 bg-white rounded-[32px] p-8 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div>
               <span className="text-indigo-500 font-bold tracking-widest text-xs uppercase">Introduction</span>
-              <h2 className="text-2xl font-bold text-slate-800 mt-4 mb-6">林庭誼 Lim</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mt-4 mb-6">林庭誼 Lim Yi</h2>
               <p className="text-slate-600 leading-relaxed mb-4">
-                我是一個在文學感性與數位理性之間遊走的人。背景橫跨了「文學」、「數位科技」與「心理」，這讓我習慣從不同的維度去觀察世界。
+                一個喜歡下廚和音樂，現實在盆地與港都、思想在文學與數位之間遊走的人。背景橫跨「文學」、「數位科技」與「心理」，喜歡從不同的角度去觀察世界。
               </p>
               <p className="text-slate-600 leading-relaxed">
-                對我而言，程式碼是現代的筆墨，而科技是情感的新載體。
+                程式碼也許就是現代的筆墨，而人之所以為人是因為透過閱讀與書寫了解存有的狀態。
               </p>
             </div>
             <div className="text-3xl">🖋️</div>
@@ -45,8 +45,7 @@ export default function About() {
             <ul className="space-y-6">
               {[
                 { title: "文學敘事", icon: "📖" },
-                { title: "數位策展", icon: "💻" },
-                { title: "心理感知", icon: "🧠" }
+                { title: "數位專案", icon: "💻" },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-4 group">
                   <span className="bg-white p-2 rounded-xl shadow-sm group-hover:scale-110 transition-transform">{item.icon}</span>
