@@ -45,10 +45,10 @@ export default function About() {
               {/* 遮罩：滑鼠移入時變暗 */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
               
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/20">
-                <h3 className="text-xl font-bold mb-1 tracking-wider text-slate-800">
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
                   {projectData["1"]["name"]}</h3>
-                <p className="text-xs text-slate-600 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
                   {projectData["1"]["desc"]}
                 </p>
               </div>
@@ -61,8 +61,9 @@ export default function About() {
                 style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/20">
-                <h3 className="text-lg font-bold tracking-wider text-slate-800">{projectData["2"]["name"]}</h3>
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["2"]["name"]}</h3>
               </div>
             </div>
 
