@@ -7,7 +7,7 @@ export default function Hobby() {
   const projectData = {
     "1": { "name": "設計應用", "imageUrl": "/design.png", "desc": "Adobe Illustrator, After Effect, Figma, Framer, Max/MSP" },
     "2": { "name": "程式專案", "imageUrl": "/card.gif", "desc": "Python: 名片生成器" },
-    "3": { "name": "文學院刊物官網", "imageUrl": "/wenhai.webp", "desc": "吉他教學" },
+    "3": { "name": "文學院刊物官網", "imageUrl": "/wenhai.webp", "desc": "政大文院《文海》" },
       };
   
   return (
@@ -71,6 +71,7 @@ export default function Hobby() {
             </div>
 
              {/* 卡片 3 (標準型) */}
+             <Link href="https://wenhai-la-nccu.framer.website/" target="_blank" rel="noopener noreferrer">
              <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
               <div 
                 className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
@@ -86,6 +87,8 @@ export default function Hobby() {
                 </p>
               </div>
             </div>
+             </Link>
+             
 
             
 
