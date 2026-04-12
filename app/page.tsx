@@ -16,7 +16,7 @@ export default function Home() {
         </aside>
 
         {/* 2. 主要內容區 */}
-        <main className="flex-grow flex flex-col justify-center items-center p-10"></main>
+        <main className="flex-grow h-screen flex flex-col justify-center items-center bg-slate-50 p-10"></main>
         
         <div className="sm:hidden w-full h-full">
           {/* 手機版 */}
@@ -26,8 +26,8 @@ export default function Home() {
 
         {/* 電腦版看到的歡迎文字 */}
         <div className="hidden sm:flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-slate-300 mb-4 justify-center">Lim Yi </h1>
-          <p className="text-slate-200 tracking-widest justify-center">請從左側選單開始探索</p>
+          <h1 className="text-4xl font-bold text-slate-800 mb-4 ">Lim Yi </h1>
+          <p className="text-slate-500 tracking-widest ">請從左側選單開始探索</p>
         </div>
 
       </div>
