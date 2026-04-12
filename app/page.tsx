@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex h-screen w-full overflow-hidden bg-slate-50">
         
         {/* 1. 電腦版選單：只有在 sm (640px) 以上才會顯示 */}
-        <aside className="hidden sm:block flex-shrink-0 h-full border-r shadow-md">
+        <aside className="hidden sm:block justify-center flex-shrink-0 h-full border-r shadow-md">
           <Menu />
         </aside>
 
@@ -26,8 +26,8 @@ export default function Home() {
 
         {/* 電腦版看到的歡迎文字 */}
         <div className="hidden sm:flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-slate-800 mb-4">歡迎來到我的個人網站</h1>
-          <p className="text-slate-500 tracking-widest">請從左側選單開始探索</p>
+          <h1 className="text-4xl font-bold text-slate-300 mb-4 justify-center">Lim Yi </h1>
+          <p className="text-slate-200 tracking-widest justify-center">請從左側選單開始探索</p>
         </div>
 
       </div>
