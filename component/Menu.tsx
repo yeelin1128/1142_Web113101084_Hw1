@@ -41,11 +41,11 @@ export default function Menu() {
         </Link>
 
         <Link href="/design-project">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">設計專案</div>
+          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">社團活動</div>
         </Link>
 
         <Link href="/programming-project">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">程式專案</div>
+          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">程式與設計專案</div>
         </Link>
 
 
