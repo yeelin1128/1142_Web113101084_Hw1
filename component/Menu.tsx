@@ -8,7 +8,7 @@ export default function Menu() {
   
   return (
     <>
-      <div className="bg-white w-[320px] h-full p-4 shadow-lg">
+      <div className="bg-[#acbac4] w-[320px] h-full p-4 shadow-lg">
 
         <Link href="/">  
             HOME
@@ -20,7 +20,7 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="text-center">名字</div>
+        <div className="text-center">林庭誼 Lim</div>
         <div className="text-center">簡介</div>
 
         <div className="flex gap-2">
@@ -34,19 +34,19 @@ export default function Menu() {
 
 
         <Link href="/about">
-          <div className="bg-gray-300 p-[16px] rounded-md">關於我</div>
+          <div className="bg-[#f0f0db] p-[16px] rounded-md">關於我</div>
         </Link>
 
         <Link href="/hobby">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">程式與設計專案</div>
+          <div className="bg-[#f0f0db] p-[16px] mt-2 rounded-md">程式與設計專案</div>
         </Link>
 
         <Link href="/design-project">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">音樂與其餘一切</div>
+          <div className="bg-[#f0f0db] p-[16px] mt-2 rounded-md">音樂與其餘一切</div>
         </Link>
 
         <Link href="/programming-project">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">興趣與生活日常</div>
+          <div className="bg-[#f0f0db] p-[16px] mt-2 rounded-md">興趣與生活日常</div>
         </Link>
 
 

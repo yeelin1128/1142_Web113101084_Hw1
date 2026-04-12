@@ -7,14 +7,15 @@ export default function About() {
   
   return (
     <>
-      <div className="flex h-screen w-full">
+      <div className="flex h-screen w-screen overflow-hidden bg-slate-50">
 
         <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur px-4 py-2 rounded-full shadow-sm border text-sm font-medium">  
          ← 返回
         </Link>
-        <div className="sm:block hidden flex-shrink-0 border-r shadow-md">
+        
+        <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r bg-white z-10">
           <Menu />
-        </div>
+        </aside>
         
         <div className="flex-grow bg-slate-50 overflow-y-auto p-10">
         <h1 className="text-2xl font-bold">關於我</h1>
