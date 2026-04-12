@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <>
-      <div className="flex h-screen w-full overflow-hidden bg-slate-50">
+      <div className="flex h-screen w-full overflow-hidden bg-slate-50 overflow-y-auto">
         
         {/* 1. 電腦版選單：只有在 sm (640px) 以上才會顯示 */}
         <aside className="hidden sm:block w-[320px] flex-shrink-0 h-full border-r">

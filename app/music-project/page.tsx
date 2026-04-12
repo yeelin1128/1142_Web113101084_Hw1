@@ -8,15 +8,19 @@ export default function Hobby() {
   return (
     <>
       <div className="flex h-full">
+
         <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
         ← 返回
         </Link>
+
         <div className="sm:block hidden">
           <Menu />
         </div>
+
         <div className="bg-red-500 w-full">
           我的興趣
         </div>
+        
       </div>
       
     </>
