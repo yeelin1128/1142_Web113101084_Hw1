@@ -13,7 +13,7 @@ export default function Home() {
         {/* --- 海浪背景層 --- */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
           {/* 第一層：深一點的藍 (放在右下角) */}
-          <div className="absolute -bottom-20 -left-20 w-[140%] h-[500px] 
+          <div className="absolute -bottom-20 -left-20 w-[140%] h-[700px] 
                           bg-blue-400/20 rounded-[50%_40%_0_0] blur-3xl animate-wave" 
                   style={{ animationDelay: '0s' }} />
   
