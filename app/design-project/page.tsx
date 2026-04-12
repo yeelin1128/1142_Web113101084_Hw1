@@ -4,21 +4,103 @@ import Image from "next/image"
 import Link from "next/link";
 
 export default function Hobby() {
+  const projectData = {
+    "1": { "name": "設計應用", "imageUrl": "/design.png", "desc": "Adobe Illustrator, After Effect, Figma, Framer, Max/MSP" },
+    "2": { "name": "程式專案", "imageUrl": "/card.gif", "desc": "Python: 名片生成器" },
+    "3": { "name": "文學院刊物官網", "imageUrl": "/wenhai.webp", "desc": "吉他教學" },
+      };
   
   return (
     <>
-      <div className="flex h-full">
-        <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
+      <div className="flex h-screen w-screen overflow-hidden bg-slate-50 overflow-y-auto">
+
+        <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur-md 
+                                  px-4 py-2 rounded-full shadow-sm border text-xs font-medium active:scale-95 transition-all">  
          ← 返回
         </Link>
-        <div className="sm:block hidden">
+        
+        <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r  z-10">
           <Menu />
-        </div>
-        <div className="bg-red-500 w-full">
-          設計專案
-        </div>
+        </aside>
+        
+
+        {/* 主內容區*/}
+        <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-10 pt-20 sm:pt-10">
+          
+          <header className="mb-10 ml-4">
+            <h1 className="text-3xl font-bold text-slate-800 tracking-tight">音樂與其餘一切</h1>
+            <p className="text-slate-500 mt-2 tracking-widest">這裡收錄我與音樂相關的經歷</p>
+          </header>
+
+          {/* 專案網格 */}
+          <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 px-4">
+            
+            {/* 卡片 1 (跨兩行) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-[3/4] sm:aspect-auto">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["1"]["imageUrl"]})` }}
+              />
+              {/* 遮罩：滑鼠移入時變暗 */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
+                  {projectData["1"]["name"]}</h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["1"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+            {/* 卡片 2 (標準) */}
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["2"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["2"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+             {/* 卡片 3 (標準型) */}
+             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${projectData["3"]["imageUrl"]})` }}
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
+                  {projectData["3"]["name"]}
+                </h3>
+                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
+                  {projectData["3"]["desc"]}
+                </p>
+              </div>
+            </div>
+
+            
+
+            {/* 其餘專案占位符：延續一致的圓角與背景 
+            {[2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="bg-white/50 border border-dashed border-slate-300 rounded-[32px] h-40 flex justify-center items-center text-slate-400 font-medium hover:bg-white hover:border-slate-400 transition-colors cursor-help">
+                專案 {i} 籌備中...
+              </div>
+            ))}
+            */}
+
+          </div>
+        </main>
+
       </div>
-      
     </>
   );
 }

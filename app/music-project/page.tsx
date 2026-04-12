@@ -6,10 +6,10 @@ import Link from "next/link";
 export default function Hobby() {
   
   const projectData = {
-    "1": { "name": "中文之夜|音樂股", "imageUrl": "/nccuchi.jpg", "desc": "" },
+    "1": { "name": "中文之夜 | 音樂股", "imageUrl": "/nccuchi.jpg", "desc": "13屆股員&主題曲編曲、14屆股員" },
     "2": { "name": "政大爵樂表演", "imageUrl": "/nccujazz.jpg", "desc": "〈大雨〉〈Dumb Feeling〉等" },
-    "3": { "name": "吉他教學", "imageUrl": "/guitarteac.jpg", "desc": "" },
-    "4": { "name": "25'淺動音樂創作營", "imageUrl": "/microwave.jpg", "desc": "〈生存最適姿勢〉作詞|最佳演出與詞曲" },
+    "3": { "name": "木、電吉他演奏", "imageUrl": "/guitarteac.jpg", "desc": "吉他教學" },
+    "4": { "name": "25'淺動音樂創作營", "imageUrl": "/microwave.jpg", "desc": "〈生存最適姿勢〉作詞 | 最佳演出與詞曲" },
     "5": { "name": "高中畢業歌創作", "imageUrl": "/graduatesong.jpg", "desc": "〈孤島連線〉作詞、編曲" },
     "6": { "name": "murmur", "imageUrl": "/coming-soon.jpg", "desc": "〈夏暮〉、〈浪〉、〈冬瓜檸檬〉、〈一個人的完成〉......待續" },
   };
@@ -57,7 +57,7 @@ export default function Hobby() {
               </div>
             </div>
 
-            {/* 卡片 2 (標準型) */}
+            {/* 卡片 2 (跨兩行兩列) */}
             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video row-span-2 col-span-2">
               <div 
                 className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
