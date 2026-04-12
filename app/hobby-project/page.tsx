@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ProgrammingProject() {
 
   const projectData = {
-    "1": { "name": "烘焙、飲料調製", "imageUrl": "", "desc": "(因疫情)從廚師夢想鬼轉" },
+    "1": { "name": "烘焙、飲料調製", "imageUrl": "", "desc": "飲料調製丙級，但因疫情從廚師夢想鬼轉" },
     "2": { "name": "手工小物", "imageUrl": "", "desc": "裁縫設計、刺繡" },
       };
   

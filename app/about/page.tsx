@@ -45,7 +45,7 @@ export default function About() {
             <ul className="space-y-6">
               {[
                 { title: "文學敘事", icon: "📖" },
-                { title: "數位專案", icon: "💻" },
+                { title: "數位內容", icon: "💻" },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-4 group">
                   <span className="bg-white p-2 rounded-xl shadow-sm group-hover:scale-110 transition-transform">{item.icon}</span>
@@ -73,9 +73,9 @@ export default function About() {
           <div className="sm:col-span-2 bg-[#acbac4] rounded-[32px] p-8 flex items-center justify-between text-white relative overflow-hidden group">
              <div className="relative z-10">
                <h3 className="text-xl font-bold">目前狀態</h3>
-               <p className="opacity-90 mt-2">正在探索更多互動科技與敘事結合的可能性。</p>
+               <p className="opacity-90 mt-2">正在探索更多互動科技與敘事、音樂結合的可能性。</p>
              </div>
-             <div className="text-5xl opacity-20 group-hover:scale-120 transition-transform duration-700">🚀</div>
+             <div className="text-5xl opacity-20 group-hover:scale-120 transition-transform duration-700">🌊</div>
           </div>
 
         </div>
