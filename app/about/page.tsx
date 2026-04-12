@@ -5,79 +5,82 @@ import Link from "next/link";
 
 
 export default function About() {
-
-  const projectData = {
-    "1": { "name": "文學與語言", "imageUrl": "/cat.png", "desc": "探討文字的數位轉型" },
-    "2": { "name": "數位內容", "imageUrl": "/ins.jpg", "desc": "多媒體互動設計實作" },
-  };
-  
   return (
-    <>
-      <div className="flex h-screen w-screen overflow-hidden bg-slate-50 overflow-y-auto">
+    <div className="flex h-screen w-screen overflow-hidden bg-slate-50">
+      
+      {/* 1. 電腦版選單 */}
+      <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r z-10">
+        <Menu />
+      </aside>
 
-        <Link href="/" className="sm:hidden fixed left-4 top-4 z-50 bg-white/80 backdrop-blur-md 
-                                  px-4 py-2 rounded-full shadow-sm border text-xs font-medium active:scale-95 transition-all">  
-         ← 返回
-        </Link>
+      {/* 2. 主內容區 */}
+      <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-12">
         
-        <aside className="sm:block hidden w-[320px] flex-shrink-0 h-full border-r  z-10">
-          <Menu />
-        </aside>
-        
+        <header className="mb-12 ml-2">
+          <h1 className="text-4xl font-bold text-slate-800 tracking-tight">關於我</h1>
+          <p className="text-slate-500 mt-3 tracking-[0.2em] uppercase text-sm">About / Philosophy / Journey</p>
+        </header>
 
-        {/* 主內容區*/}
-        <main className="flex-grow h-full overflow-y-auto bg-slate-50 custom-scrollbar p-6 sm:p-10 pt-20 sm:pt-10">
+        {/* Bento Grid 容器 */}
+        <div className="grid sm:grid-cols-4 grid-cols-1 gap-6 max-w-6xl">
           
-          <header className="mb-10 ml-4">
-            <h1 className="text-3xl font-bold text-slate-800 tracking-tight">程式專案</h1>
-            <p className="text-slate-500 mt-2 tracking-widest">這裡收錄我的程式學習過程</p>
-          </header>
-
-          {/* 專案網格 */}
-          <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 px-4">
-            
-            {/* 卡片 1 (跨兩行) */}
-            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 row-span-2 aspect-[3/4] sm:aspect-auto">
-              <div 
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${projectData["1"]["imageUrl"]})` }}
-              />
-              {/* 遮罩：滑鼠移入時變暗 */}
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
-                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
-                  {projectData["1"]["name"]}</h3>
-                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
-                  {projectData["1"]["desc"]}
-                </p>
-              </div>
+          {/* A. 核心自介 (佔大空間 2x2) */}
+          <div className="sm:col-span-2 sm:row-span-2 bg-white rounded-[32px] p-8 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            <div>
+              <span className="text-indigo-500 font-bold tracking-widest text-xs uppercase">Introduction</span>
+              <h2 className="text-2xl font-bold text-slate-800 mt-4 mb-6">林庭誼 Lim</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                我是一個在文學感性與數位理性之間遊走的人。背景橫跨了「文學」、「數位科技」與「心理」，這讓我習慣從不同的維度去觀察世界。
+              </p>
+              <p className="text-slate-600 leading-relaxed">
+                對我而言，程式碼是現代的筆墨，而科技是情感的新載體。
+              </p>
             </div>
-
-            {/* 卡片 2 (標準型) */}
-            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
-              <div 
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
-              />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
-                <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
-                  {projectData["2"]["name"]}</h3>
-              </div>
-            </div>
-
-            {/* 其餘專案占位符：延續一致的圓角與背景 */}
-            {[2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="bg-white/50 border border-dashed border-slate-300 rounded-[32px] h-40 flex justify-center items-center text-slate-400 font-medium hover:bg-white hover:border-slate-400 transition-colors cursor-help">
-                專案 {i} 籌備中...
-              </div>
-            ))}
-
+            <div className="text-3xl">🖋️</div>
           </div>
-        </main>
 
-      </div>
-    </>
+          {/* B. 專業領域 (1x2) */}
+          <div className="sm:col-span-1 sm:row-span-2 bg-indigo-50 rounded-[32px] p-8 flex flex-col border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            <h3 className="text-lg font-bold text-indigo-900 mb-6">研究領域</h3>
+            <ul className="space-y-6">
+              {[
+                { title: "文學敘事", icon: "📖" },
+                { title: "數位策展", icon: "💻" },
+                { title: "心理感知", icon: "🧠" }
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-4 group">
+                  <span className="bg-white p-2 rounded-xl shadow-sm group-hover:scale-110 transition-transform">{item.icon}</span>
+                  <span className="text-slate-700 font-medium">{item.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* C. 技能與標籤 (1x1) */}
+          <div className="bg-white rounded-[32px] p-6 shadow-sm border border-slate-100 flex flex-wrap gap-2 items-center hover:bg-slate-50 transition-colors">
+            {["Next.js", "Tailwind", "Python", "UI Design"].map(tag => (
+              <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold">
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* D. 隨手記/格言 (1x1) */}
+          <div className="bg-slate-800 rounded-[32px] p-6 text-white flex flex-col justify-center items-center text-center shadow-lg">
+            <p className="italic text-sm opacity-80">「在數位與人文的交叉口，找尋屬於人的溫度。」</p>
+          </div>
+
+          {/* E. 寬橫幅區塊 (2x1) */}
+          <div className="sm:col-span-2 bg-[#acbac4] rounded-[32px] p-8 flex items-center justify-between text-white relative overflow-hidden group">
+             <div className="relative z-10">
+               <h3 className="text-xl font-bold">目前狀態</h3>
+               <p className="opacity-90 mt-2">正在探索更多互動科技與敘事結合的可能性。</p>
+             </div>
+             <div className="text-5xl opacity-20 group-hover:scale-120 transition-transform duration-700">🚀</div>
+          </div>
+
+        </div>
+      </main>
+    </div>
   );
 }
