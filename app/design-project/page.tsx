@@ -37,7 +37,7 @@ export default function Hobby() {
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 px-4">
             
             {/* 卡片 1 (跨兩行) */}
-            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-[3/4] sm:aspect-auto">
+            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-square sm:aspect-auto">
               <div 
                 className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${projectData["1"]["imageUrl"]})` }}
@@ -45,9 +45,9 @@ export default function Hobby() {
               {/* 遮罩：滑鼠移入時變暗 */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
               
-              <div className="absolute bottom-0 w-full p-4 text-white backdrop-blur-md bg-white/20 border-t border-white/30
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30
                               transition-transform duration-500 ease-in-out
-                              translate-y-[calc(100%-80px)] group-hover:translate-y-0">
+                              translate-y-[calc(100%-70px)] group-hover:translate-y-0">
                 <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
                   {projectData["1"]["name"]}</h3>
                 <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
@@ -63,7 +63,9 @@ export default function Hobby() {
                 style={{ backgroundImage: `url(${projectData["2"]["imageUrl"]})` }}
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30
+                              transition-transform duration-500 ease-in-out
+                              translate-y-[calc(100%-70px)] group-hover:translate-y-0">
                 <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
                   {projectData["2"]["name"]}
                 </h3>
@@ -75,13 +77,15 @@ export default function Hobby() {
 
              {/* 卡片 3 (標準型) */}
              <Link href="https://wenhai-la-nccu.framer.website/" target="_blank" rel="noopener noreferrer">
-             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
+             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-square">
               <div 
                 className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${projectData["3"]["imageUrl"]})` }}
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30">
+              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30
+                              transition-transform duration-500 ease-in-out
+                              translate-y-[calc(100%-70px)] group-hover:translate-y-0">
                 <h3 className="text-lg font-bold tracking-wider text-white drop-shadow-lg">
                   {projectData["3"]["name"]}
                 </h3>
