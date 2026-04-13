@@ -36,7 +36,7 @@ export default function ProgrammingProject() {
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 px-4">
             
             {/* 卡片 1  */}
-            {/* E. 寬橫幅區塊 (2x1) */}
+            {/* E. 寬橫幅區塊 */}
           <div className="sm:col-span-2 bg-[#acbac4] rounded-[32px] p-8 flex items-center justify-between text-white relative overflow-hidden group">
              <div className="relative z-10">
                <h3 className="text-xl font-bold">烘焙、飲料調製</h3>
