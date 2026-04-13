@@ -35,26 +35,14 @@ export default function ProgrammingProject() {
           {/* 專案網格 */}
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-8 px-4">
             
-            {/* 卡片 1 (跨兩行) */}
-            <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-[3/4] sm:aspect-auto">
-              {/* 背景圖片 */}
-              <div 
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${projectData["1"]["imageUrl"]})` }}
-              />
-              {/* 遮罩：滑鼠移入時變暗 */}
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
-              
-              <div className="absolute bottom-0 w-full p-6 text-white backdrop-blur-md bg-white/20 border-t border-white/30
-                              transition-transform duration-500 ease-in-out
-                              translate-y-[calc(100%-80px)] group-hover:translate-y-0">
-                <h3 className="text-xl font-bold mb-1 tracking-wider text-white drop-shadow-lg">
-                  {projectData["1"]["name"]}</h3>
-                <p className="text-xs text-white/90 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ">
-                  {projectData["1"]["desc"]}
-                </p>
-              </div>
-            </div>
+            {/* 卡片 1  */}
+            {/* E. 寬橫幅區塊 (2x1) */}
+          <div className="sm:col-span-2 bg-[#acbac4] rounded-[32px] p-8 flex items-center justify-between text-white relative overflow-hidden group">
+             <div className="relative z-10">
+               <h3 className="text-xl font-bold">烘焙、飲料調製</h3>
+               <p className="opacity-90 mt-2">飲料調製丙級，但因疫情從廚師夢想鬼轉。</p>
+             </div>
+          </div>
 
             {/* 卡片 2 (標準) */}
             <div className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 aspect-video">
